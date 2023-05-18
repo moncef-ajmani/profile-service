@@ -19,7 +19,7 @@ FROM openjdk:19
 WORKDIR /app
 
 # Copy the built JAR file from the builder stage
-COPY --from=builder /app/target/config-service.jar config-service.jar
+COPY --from=builder /app/target/profile-service.jar profile-service.jar
 
 EXPOSE 8081
 
