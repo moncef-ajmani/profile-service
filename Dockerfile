@@ -12,7 +12,7 @@ RUN mvn dependency:go-offline -B
 COPY src ./src
 
 # Build the application
-RUN mvn package
+RUN mvn install
 
 FROM openjdk:19
 
