@@ -1,4 +1,5 @@
 FROM maven:3.8.3-openjdk-17 AS builder
+ENV SPRING_CLOUD_CONFIG_URI http://192.168.1.103:8888
 
 WORKDIR /app
 
